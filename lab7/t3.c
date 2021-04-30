@@ -1,5 +1,7 @@
 // Tic-tac-toe (T3) Network Game
 // Jason Losh
+// Student : Saurav Kumar Sah  
+// Student id :1001757652
 
 //-----------------------------------------------------------------------------
 // Compile notes for C99 code
@@ -279,11 +281,7 @@ bool condition;
         printf("Sending invite...\n");
         remotePort = SERVER_PORT;
         condition = sendData(remoteIp,SERVER_PORT,role);
-        if (condition)
-        {
-            printf("Invitation sent\n");
-        }
-            
+           
     }
     else
     {
@@ -295,7 +293,7 @@ bool condition;
         
         if(strcmp(str, "invite") != 0)
         {
-            printf("You request is invalid\n");
+            printf("Invalid Request\n");
             exit(EXIT_FAILURE);
         }
     }
